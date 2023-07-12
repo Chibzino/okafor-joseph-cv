@@ -1,0 +1,262 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+article {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  height: 100%;
+  margin: 50px;
+}
+
+.left-section {
+  width: 30%;
+  background-color: #161929;
+  color: white;
+  padding-bottom: 15px;
+  padding-left: 30px;
+  padding-right: 20px;
+  height: 100%;
+  overflow: auto;
+  scroll-behavior: smooth;
+  overflow-y: hidden;
+}
+
+.left-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 50px;
+  padding-top: 60px;
+}
+.left-image {
+  width: 200px;
+  height: 200px;
+  border-radius: 100px;
+  border: 5px;
+  border-style: solid;
+  border-color: beige;
+}
+
+strong {
+  font-size: 20px;
+}
+
+.contact-container {
+  padding-bottom: 20px;
+}
+
+.contact-container h3 {
+  font-size: 30px;
+  font-weight: 400;
+  padding-bottom: 5px;
+}
+.line {
+  width: 100%;
+  background-color: #e0e1e6;
+  height: 2px;
+  margin-bottom: 16px;
+}
+.contact-container h4 {
+  font-size: 16px;
+  font-weight: 400;
+  padding-bottom: 30px;
+}
+.contact-container p {
+  font-size: 16px;
+}
+
+.phone-container {
+  padding-bottom: 15px;
+}
+
+.education {
+  padding-top: 10px;
+}
+
+ul {
+  list-style-type: disc;
+  margin-left: 20px;
+}
+
+ul li {
+  padding-bottom: 10px;
+  font-size: 16px;
+}
+
+/*right section*/
+.right-section {
+  color: #161929;
+  width: 60%;
+  background-color: white;
+  padding-right: 50px;
+  padding-left: 50px;
+  height: 100%;
+}
+
+.name {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-left: 50px;
+  padding-top: 70px;
+}
+.name h2 {
+  font-size: 60px;
+  font-weight: 400;
+  padding-bottom: 10px;
+}
+
+.name h4 {
+  font-size: 30px;
+  font-weight: 400;
+}
+
+.right-section h3 {
+  font-size: 50px;
+  padding-bottom: 20px;
+}
+.right-section .role {
+  font-size: 30px;
+  font-weight: 400;
+  padding-bottom: 40px;
+}
+
+.right-section h4 {
+  font-size: 25px;
+  font-weight: 400;
+  padding-bottom: 10px;
+}
+
+.right-section p {
+  line-height: 30px;
+  font-size: 18px;
+  padding-bottom: 50px;
+  text-align: justify;
+}
+.project {
+  padding-bottom: 70px;
+}
+.line2 {
+  width: 100%;
+  background-color: #161929;
+  height: 1px;
+  margin-bottom: 16px;
+}
+
+.right-section .btn-cont {
+  display: flex;
+  align-items: end;
+  justify-items: end;
+  margin-bottom: 50px;
+}
+.btn {
+  color: white;
+  background-color: #161929;
+  height: 40px;
+  width: 100px;
+  border-radius: 10px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.img-container {
+  padding-left: 200px;
+  padding-right: 200px;
+  padding-top: 30px;
+}
+.gallery {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 20px;
+  font-size: 40px;
+  color: #161929;
+  font-weight: 400;
+}
+.images {
+  width: 200px;
+  height: 200px;
+  border-radius: 150px;
+  margin-right: 20px;
+}
+
+/*Media Queiores*/
+
+@media screen and (min-width: 850px) {
+  article {
+    margin-top: 50px;
+  }
+
+  .left-section {
+    padding-left: 20px;
+  }
+
+  .right-section {
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+
+  .img-container {
+    padding-left: 80px;
+    padding-right: 80px;
+    padding-top: 10px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  article {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .left-section {
+    width: 100%;
+    background-color: #161929;
+    color: white;
+    padding-bottom: 15px;
+    padding-left: 25px;
+    height: 100%;
+  }
+
+  .right-section {
+    color: #161929;
+    width: 100%;
+    background-color: white;
+    padding-right: 20px;
+    padding-left: 20px;
+    height: 100%;
+  }
+
+  .img-container {
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 10px;
+    padding-bottom: 30px;
+  }
+
+  .images {
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    margin-right: 20px;
+  }
+
+  .name {
+    padding-left: 0;
+  }
+  .name h2 {
+    font-size: 40px;
+    font-weight: 400;
+    padding-bottom: 10px;
+  }
+}
